@@ -48,11 +48,19 @@
 <div class="row" style="text-align:center;padding:0;margin:0">
   <div class="container">
     <figure>
-     <img src="imgs/fig1.png" style="width:60%">
+     <img src="imgs/explanations.png" style="width:60%">
       <br />
       <br />
       <figcaption>
-        Our proposed <i>agreement</i> (top) and <i>distinction</i> (bottom) tasks for evaluating the human interpretability of visual explanations.
+        Different forms of explanation.
+        (Top left) Heatmap explanations by GradCAM and BagNet highlight decision-relevant image regions.
+        (Bottom left) Prototype-based explanations by ProtoPNet and ProtoTree match image regions to canonical prototypes.
+        This schematic is a much simplified version of the actual explanation.
+        (Right) Example ProtoPNet explanation taken from the original paper. The full explanation has up to 10 rows.
+        <i>
+          Existing evaluation metrics typically apply to one explanation form (e.g., only heatmaps). 
+          We design HIVE to evaluate diverse visual interpretability methods and enable cross-method comparison.
+        </i>        
       </figcaption>
     </figure>
     
