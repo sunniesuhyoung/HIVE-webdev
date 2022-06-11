@@ -144,24 +144,36 @@
     
   We propose HIVE, a novel human evaluation framework for visual interpretability methods.
   Through careful design, HIVE allows for 
-  <b>falsifiable hypothesis testing</b> regarding the utility of explanations for identifying model errors, 
-  <b>cross-method comparison</b> between different interpretability techniques, 
-  and <b>human-centered evaluation</b> for understanding the practical effectiveness of interpretability.
+  <i>falsifiable hypothesis testing</i> regarding the utility of explanations for identifying model errors, 
+  <i>cross-method comparison</i> between different interpretability techniques, 
+  and <i>human-centered evaluation</i> for understanding the practical effectiveness of interpretability.
+  
+  <br />
+  <br />
   
   In particular, we focus on AI-assisted decision making scenarios where humans use an AI (image classification) model 
   and an interpretability method to make decisions about whether the model prediction is correct or more generally 
   about whether to use the model and/or interpretability method. We evaluate how useful a given interpretability 
   method is in these scenarios through the following tasks.
   
-  First, we evaluate interpretability methods on a simple <b>agreement</b> task, where we present users with a single 
+  <br />
+  <br />
+  
+  First, we evaluate interpretability methods on a simple <i>agreement</i> task, where we present users with a single 
   model prediction-explanation pair for a given image and ask how confident they are in the prediction.
   This task simulates a common decision making setting and is close to existing evaluation schemes that consider 
   a model’s top-1 prediction and an explanation for it.
   
+  <br />
+  <br />
+  
   However, it has been previously observed that users tend to believe in model predictions when given explanations for them. 
-  Hence, we evaluate methods on a distinction task to mitigate the effect of such confirmation bias in interpretability evaluation. 
+  Hence, we evaluate methods on a <i>distinction</i> task to mitigate the effect of such confirmation bias in interpretability evaluation. 
   Here we simultaneously show four prediction-explanation pairs and ask users to identify the correct prediction based on the 
   provided explanations. This task measures how well explanations can help users distinguish between correct and incorrect predictions.
+  
+  <br />
+  <br />
   
   In summary, HIVE consists of the following steps: 
   We first introduce the study and the interpretability method to be evaluated. 
@@ -180,10 +192,8 @@
   <br />
   <br />
   
-  Above are snapshots of our user interface (UI) developed in HTML and Javascript. 
-  We evaluate methods on two tasks: <i>distinction</i> (can you distinguish between correct and incorrect predictions based on explanations?) 
-  and <i>agreement</i> (how confident are you in the model prediction?).
-  We show the distinction task for GradCAM (left) and ProtoPNet (center) and the agreement task for ProtoPNet (right).
+  Above are snapshots of our user interface developed in HTML and Javascript (all UIs are available at https://github.com/princetonvisualai/HIVE).
+  As examples, we show the UI for evaluating GradCAM on the <i>distinction</i> task (left) and the UI for evaluating ProtoPNet on the <i>agreement</i> task (right).
                                                                   
 </div>
 
