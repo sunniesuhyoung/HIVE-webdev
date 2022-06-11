@@ -77,7 +77,7 @@
     
     <div class="col-xs-2 text-center">
       <div class="service-box mt-5 mx-auto">
-        <a href="https://arxiv.org/abs/2112.03184" target="_blank">
+        <a href="https://drive.google.com/file/d/1nOYfy_0e61cGGDzwreCI4IUly1VbTgur/view?usp=sharing" target="_blank">
           <i class="fa fa-4x fa-file-text-o text-primary mb-3"></i>
         </a>
         <h4 class="mb-3" style="font-size:18px">Extended Abstract</h4>
@@ -86,8 +86,8 @@
     
     <div class="col-xs-2 text-center">
       <div class="service-box mt-5 mx-auto">
-        <a href="https://arxiv.org/abs/2112.03184" target="_blank">
-          <i class="fa fa-4x fa-file-text-o text-primary mb-3"></i>
+        <a href="https://youtu.be/BDlFb1CFQRQ" target="_blank">
+          <i class="fa fa-4x fa-video-camera text-primary mb-3"></i>
         </a>
         <h4 class="mb-3" style="font-size:18px">2min Talk</h4>
       </div>
@@ -142,18 +142,35 @@
 <div class="container">
   <h2>HIVE (Human Interpretability of Visual Explanations)</h2>
     
-  We propose HIVE, a novel human evaluation framework for visual interpretability methods that allows for 
-  falsifiable hypothesis testing, cross-method comparison, and human-centered evaluation.
+  We propose HIVE, a novel human evaluation framework for visual interpretability methods.
+  Through careful design, HIVE allows for 
+  <b>falsifiable hypothesis testing</b> regarding the utility of explanations for identifying model errors, 
+  <b>cross-method comparison</b> between different interpretability techniques, 
+  and <b>human-centered evaluation</b> for understanding the practical effectiveness of interpretability.
   
-  In our work, we first lay out two desiderata of explanations used to assist human decision making: 
-  (1) Explanations should allow users to distinguish between correct and incorrect predictions. 
-  (2) Explanations should be understandable to users.
-  We then design tasks to evaluate these two desiderata, namely the <i>distinction</i> task and the <i>agreement</i> task.
+  In particular, we focus on AI-assisted decision making scenarios where humans use an AI (image classification) model 
+  and an interpretability method to make decisions about whether the model prediction is correct or more generally 
+  about whether to use the model and/or interpretability method. We evaluate how useful a given interpretability 
+  method is in these scenarios through the following tasks.
   
-  To demonstrate the extensibility and applicability of HIVE, we conduct IRB-approved human studies and evaluate 
-  four existing computer vision interpretability methods that represent different streams of interpretability work 
-  (e.g., post-hoc explanations, interpretable-by-design models, heatmaps, and prototype-based explanations): 
-  GradCAM, BagNet, ProtoPNet, ProtoTree.
+  First, we evaluate interpretability methods on a simple <b>agreement</b> task, where we present users with a single 
+  model prediction-explanation pair for a given image and ask how confident they are in the prediction.
+  This task simulates a common decision making setting and is close to existing evaluation schemes that consider 
+  a model’s top-1 prediction and an explanation for it.
+  
+  However, it has been previously observed that users tend to believe in model predictions when given explanations for them. 
+  Hence, we evaluate methods on a distinction task to mitigate the effect of such confirmation bias in interpretability evaluation. 
+  Here we simultaneously show four prediction-explanation pairs and ask users to identify the correct prediction based on the 
+  provided explanations. This task measures how well explanations can help users distinguish between correct and incorrect predictions.
+  
+  In summary, HIVE consists of the following steps: 
+  We first introduce the study and the interpretability method to be evaluated. 
+  Next, we show a preview of the evaluation task and provide example explanations 
+  for one correct and one incorrect model prediction to give participants appropriate references. 
+  Afterwards, participants complete the evaluation task. 
+  Throughout the study, we also ask subjective evaluation and user preference questions 
+  to make the most out of the human studies. 
+  Our study design was approved by our university’s Institutional Review Board (IRB).
   
   <br />
   <br />
@@ -170,24 +187,6 @@
                                                                   
 </div>
 
-  
-  
-<!-- Results -->
-<div class="container">
-  <h2>Results</h2>
-  
-  <center><img src="imgs/results.png" style="width:40%"></center>
-  
-  <br />
-
-  Our results suggest that interpretability methods should be improved (to be closer to 100% accuracy) 
-  before they can be reliably used to aid decision making. 
-  For each study, we report the mean accuracy and standard deviation (random chance is 25% for distinction and output prediction and 50% for agreement). 
-  <i>Italics</i> denotes methods that do not statistically significantly outperform random chance (p > 0.05);
-  <b>bold</b> denotes the highest performing method.  
-  
-</div>
-  
   
   
 <!-- Key findings -->
