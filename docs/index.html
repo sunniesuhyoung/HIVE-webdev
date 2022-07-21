@@ -70,12 +70,21 @@
   <div class="row">
     <div class="col-lg-0 col-md-0 col-sm-0"></div>
           
-    <div class="col-xs-2 col-xs-offset-2 text-center">
+    <div class="col-xs-2 text-center">
       <div class="service-box mt-5 mx-auto">
         <a href="https://arxiv.org/abs/2112.03184" target="_blank">
           <i class="fa fa-4x fa-file-text-o text-primary mb-3"></i>
         </a>
         <h4 class="mb-3" style="font-size:18px">Paper</h4>
+      </div>
+    </div>
+    
+    <div class="col-xs-2 text-center">
+      <div class="service-box mt-5 mx-auto">
+        <a href="https://github.com/princetonvisualai/HIVE/blob/main/HIVE_suppmat.pdf" target="_blank">
+          <i class="fa fa-4x fa-file-text-o text-primary mb-3"></i>
+        </a>
+        <h4 class="mb-3" style="font-size:18px">Supplementary Material</h4>
       </div>
     </div>
     
@@ -94,6 +103,15 @@
           <i class="fa fa-4x fa-video-camera text-primary mb-3"></i>
         </a>
         <h4 class="mb-3" style="font-size:18px">2min Talk</h4>
+      </div>
+    </div>  
+    
+    <div class="col-xs-2 text-center">
+      <div class="service-box mt-5 mx-auto">
+        <a href="https://youtu.be/7uysq-qAtr4" target="_blank">
+          <i class="fa fa-4x fa-video-camera text-primary mb-3"></i>
+        </a>
+        <h4 class="mb-3" style="font-size:18px">8min Talk</h4>
       </div>
     </div>  
     
@@ -150,12 +168,11 @@
 <div class="container">
   <h2>Citation</h2>
   <pre><code>
-    @article{kim2021hive,
-        author = {Sunnie S. Y. Kim and Nicole Meister and Vikram V. Ramaswamy and Ruth Fong and Olga Russakovsky},
-        title = {{HIVE}: Evaluating the Human Interpretability of Visual Explanations},
-        journal = {CoRR},
-        volume = {abs/2112.03184},
-        year = {2021}
+    @inproceedings{Kim2022HIVE,
+      author = {Sunnie S. Y. Kim and Nicole Meister and Vikram V. Ramaswamy and Ruth Fong and Olga Russakovsky},
+      title = {{HIVE}: Evaluating the Human Interpretability of Visual Explanations},
+      booktitle = {European Conference on Computer Vision (ECCV)},
+      year = {2022}
     }
   </code></pre>
 </div>
@@ -176,7 +193,7 @@
   
   In particular, we focus on AI-assisted decision making scenarios where humans use an AI (image classification) model 
   and an interpretability method to make decisions about whether the model prediction is correct or more generally 
-  about whether to use the model and/or interpretability method. We evaluate how useful a given interpretability 
+  about whether to use the model. We evaluate how useful a given interpretability 
   method is in these scenarios through the following tasks.
   
   <br />
@@ -327,7 +344,7 @@
   and the Princeton SEAS and ECE Senior Thesis Funding to NM.
   We thank the authors of [1, 2, 3, 4, 5] for open-sourcing their code and the authors of [2, 4, 5, 6] for sharing their trained models.
   We also thank the AMT workers who participated in our studies, as well as the Princeton Visual AI Lab members 
-  (Dora Zhao, Kaiyu Yang, Angelina Wang, and others) who tested our user interface and provided helpful feedback.
+  (especially Dora Zhao, Kaiyu Yang, Angelina Wang) who tested our user interface and provided helpful feedback.
   
 </div>
   
